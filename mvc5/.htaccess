@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /mvc5/
+RewriteRule ^index\\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /mvc5/index.php [L]
